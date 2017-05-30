@@ -1,0 +1,341 @@
+/*@font-face {*/
+/*font-family: 'nowayregular2';*/
+/*src: url('../noway-webfont/noway-regular-webfont.woff2') format('woff2'),*/
+/*url('../noway-webfont/noway-regular-webfont.woff') format('woff');*/
+/*font-weight: normal;*/
+/*font-style: normal;*/
+/*}*/
+
+[class*="col-"] {
+    border: 2px solid black;
+}
+
+/*filter: blur(5px);*/
+/*-webkit-filter: blur(5px);*/
+/*-moz-filter: blur(5px);*/
+/*-o-filter: blur(5px);*/
+/*-ms-filter: blur(5px);*/
+
+/* Page Home*/
+.container{
+    background: rgba(255, 94, 6, 0.61);
+}
+
+.img1{
+    background-image: url(/img/F3.jpg);
+    background-size: 100% 100%; /*cover ou contain*/
+
+}
+
+.img2{
+    background-image: url(/img/L2.jpg);
+    background-size: 100% 120%; /*cover ou contain*/
+}
+
+#body{
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    color: yellow;
+
+
+}
+
+header {
+    width: auto;
+    height: 15%;
+}
+
+#ligne2,#ligne2-2{
+    width: auto;
+    height: 28%;
+}
+
+#ligne2Interne{
+    height: 100%;
+}
+
+#ligne3 {
+
+    width: auto;
+    height: 47%;
+}
+
+footer {
+    width: auto;
+    height:10%;
+}
+
+/* Page HomeV2*/
+
+/*.container2{*/
+    /*background:rgba(98, 24, 0, 0.7);*/
+
+/*}*/
+
+#line2Home2{
+    margin-left: 10%;
+    width: 110px;
+}
+
+#bandeauNoir2{
+    height: 50%;
+    width: 100%;
+    opacity: 0.5;
+    background: rgb(0, 0, 0);
+    animation-duration: 1s;
+    margin-top: 45%;
+}
+
+
+/*  General*/
+
+body,html,.container,.container2{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+#bandeauNoir {
+     height: 100%;
+     width: 100%;
+     opacity: 0.5;
+     background: rgb(0, 0, 0);
+     animation-duration: 1s;
+ }
+
+#paragraphe,#paragraphe2 {
+    text-align: center;
+    color: white;
+    font-style: normal;
+    animation-delay: 2.3s;
+    transition-delay: 2s;
+}
+
+#text{
+   text-align: left;
+    margin-left: 35%;
+}
+
+/* Icon HomePage    */
+
+#title {
+    animation-delay: 2.6s;
+    text-align: center;
+    padding-top: 8%;
+}
+
+.tailleIcon{
+    height: 40px;
+    width: 40px;
+    margin-right: 20px;
+}
+
+#les3Icons {
+    padding-top: 25%;
+    text-align: center;
+    animation-delay:1.2s ;
+}
+
+#les4Icons {
+    text-align: center;
+    padding-top: 22%;
+}
+
+#iconMenu {
+    animation-delay: 0.3s;
+}
+
+#iconAccount {
+
+    animation-delay: 0.6s;
+}
+
+#iconContact {
+    animation-delay: 0.9s;
+}
+
+#boutonNext {
+    padding-top: 35%;
+    padding-left: 60%;
+    animation-delay: 1.2s;
+    font-size: x-small;
+}
+
+#IconIsole{
+    animation-delay: 1.2s;
+}
+#learn {
+    text-align: center;
+    padding-top: 70%;
+    height:100%;
+}
+
+#cite {
+    padding-right: 100px;
+    margin-bottom: 1%;
+}
+
+#line1 {
+    width: 110px;
+    margin-right: 5%;
+}
+#line2 {
+    margin-top: 0.2%;
+    margin-left: 40%;
+    width: 110px;
+}
+
+#citeEtLine {
+    margin-right: 20%;
+}
+
+#motFin {
+    margin-left: 26%;
+    color: yellow;
+}
+
+/*AJOUT POUR HOMEPAGE*/
+
+a {
+    display: inline-block;
+    font-size: x-small;
+    color: yellow;
+    text-align: center;
+}
+
+.txtSousMenu {
+    margin-right: 32%;
+}
+@media all and (min-width: 580px) and (max-width: 768px){
+
+    #les4Icons{
+        text-align: right;
+        background: rgba(200, 37, 10, 0.83);
+    }
+}
+@media all and (max-width :580px){
+    #les4Icons{
+        text-align: center;
+        background: rgba(200, 37, 10, 0.83);
+    }
+
+#citeEtLine{
+    margin-left: 47%;
+ }
+}
+
+
+#button{
+    background: url('/img/icon/slide suivant.png') no-repeat;
+    background-size: 40px 40px;
+    cursor:pointer;
+    border: none;
+    width: 40px;
+    height: 40px;
+}
+
+#buttonProject,#Precedent,#Suivant{
+    cursor:pointer;
+    border: none;
+    background: none;
+    color: yellow;
+}
+/* PageMenu*/
+
+#title2 {
+    animation-delay: 2.6s;
+    padding-left: 20%;
+    padding-top: 5%;
+}
+
+#les3IconsMenu{
+    padding-top: 15%;
+    text-align: center;
+    animation-delay:1.2s ;
+}
+#headMenu{
+    background-color: #ff8812;
+    height: 10%;
+}
+
+#photo1{
+    background: url(/img/pageMenu/mereFilleO.jpg);
+    background-size: cover;
+
+
+}
+#photo2{
+    background: url(/img/pageMenu/childO.jpg);
+    background-size: cover;
+}
+
+
+#photo3{
+    background: url(/img/pageMenu/mereFilsO.jpg);
+    background-size: cover;
+      }
+#photo4 {
+    background: url(/img/pageMenu/teenagerO.jpg);
+    background-size: cover;
+}
+
+#ligne1Menu{
+    height: 45%;
+    text-align: left;
+    color: orangered;
+}
+
+#footerMenu{height:45%;}
+
+#bodyMenu{
+    height: 100%;
+    width: 100%;
+    /*color: navajowhite;*/
+    color: orangered;
+}
+#BoutonProjetLien{ font-size:large;}
+
+#buttonProjet2{color: orangered;border: none;  background: none;margin-left: 10%;}
+/* fin pageMenu*/
+
+#footerProjet{
+    background: url(/img/pageProjet/childProjet.jpg);
+    background-size: cover;
+}
+
+#textProjet{
+    margin-left: 15%;
+    margin-top: 10%;
+}
+
+#nom,#start2,#buttonInvolved{
+    cursor:pointer;
+    border: none;
+    background: none;
+    /*color: navajowhite;*/
+    color: orangered;
+}
+#start{margin-left:6.5% }
+
+/* formulaire*/
+
+.slide,.slide2,.submit{
+    display: none;
+}
+
+#NextForm{
+    background: url('/img/icon/arriere.png') no-repeat;
+    padding-top: 35%;
+    padding-left: 60%;
+    animation-delay: 1.2s;
+    font-size: x-small;
+}
+
+#SuivantForm{
+    background: url('/img/icon/suivant.png') no-repeat;
+    padding-top: 35%;
+    padding-left: 60%;
+    animation-delay: 1.2s;
+    font-size: x-small;
+}

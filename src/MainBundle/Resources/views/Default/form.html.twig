@@ -1,0 +1,83 @@
+
+    {% extends 'layout/base.html.twig' %}
+
+    {% block SuiteHead %}
+        {{ include('FpJsFormValidatorBundle::javascripts.html.twig') }}{% endblock %}
+
+    {% block body %}
+
+        <div id="bodyMenu" class="animsition">
+            <div class="container">
+                <header id="headMenu" class="row">
+
+                    <div class="col-md-4 col-sm-12 col-xs-12">
+                        <div id="title2" class="animated fadeIn animated zoomInDown"><img src="{{ asset('img/icon/logopetit.png') }}" class="animated pulse"></div></div>
+                    <div class="col-md-4"></div>
+                    <div id="les3IconsMenu" class="col-md-4 hidden-sm-down animated pulse">
+
+                        <a id="iconMenu" class="animated fadeIn" href="{{ path('menu') }}"><img class="tailleIcon" src="{{ asset('img/icon/close.png') }}"><br/><span  class="txtSousMenu">back</span></a>
+
+                        <a id="iconContact" class="animated fadeIn" href="{{ path('fos_user_registration_register') }}"><img class="tailleIcon" src="{{ asset('img/icon/contact.png') }}"><br/><span class="txtSousMenu" >contact</span></a>
+
+                        <a id="iconAccount" class="animated fadeIn" href="{{ path('fos_user_registration_register') }}"><img class="tailleIcon" src="{{ asset('img/icon/account.png') }}"><br/><span class="txtSousMenu" style="font-size:xx-small ">my account</span></a>
+                    </div>
+                </header>
+
+
+                <div class="row" style="height: 30%">
+                    <div class="col-md-12">ligne 2
+                    </div>
+                </div>
+
+                <footer class="row" style="height: 100%">
+                    <div class="col-md-8" >
+                        <form>
+                            <div class="one">
+                            <p>
+                                username<br>
+                                <input name="..." data-validation="url">
+                            </p>
+                            <p>
+                                E-mail<br>
+                                <input name="..." data-validation="email" data-validation-help="Som help info...">
+                            </p>
+
+                                <p>
+                                    Phone<br>
+                                    <input name="..." data-validation="alphanumeric" data-validation-allowing="-_">
+                                </p>
+
+                            <p>
+                                <input id="bouton" type="submit">
+                            </p>
+                            </div>
+
+                            <div class="two">
+
+                                message<br>
+                                <input name="..." data-validation="email" data-validation-help="Som help info...">
+                                </p>
+                            </div>
+                        </form>
+
+
+                    </div>
+                    <div class="col-md-4"> icon</div>
+
+                </footer>
+            </div>
+        </div>
+
+        {% block SuiteJavascripts %}  <script src="{{ asset('js/js/jquery.fpjsformvalidator.js') }}"></script>
+            <script src="{{ asset('js/form.js') }}"></script>
+        {% endblock %}
+    {% endblock %}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,84 @@
+{% extends 'layout/base.html.twig' %}
+
+{% block body %}
+    <div id="bodyMenu" class="animsition">
+<div class="container">
+        <header id="headMenu" class="row">
+
+            <div class="col-md-4 col-sm-12 col-xs-12">
+                <div id="title2" class="animated fadeIn animated zoomInDown"><img src="{{ asset('img/icon/logopetit.png') }}" class="animated pulse"></div></div>
+            <div class="col-md-4"></div>
+            <div id="les3IconsMenu" class="col-md-4 hidden-sm-down animated pulse">
+
+                <a id="iconMenu" class="animated fadeIn" href="{{ path('home') }}"><img class="tailleIcon" src="{{ asset('img/icon/close.png') }}"><br/><span  class="txtSousMenu">close</span></a>
+
+                <a id="iconContact" class="animated fadeIn" href="{{ path('fos_user_registration_register') }}"><img class="tailleIcon" src="{{ asset('img/icon/contact.png') }}"><br/><span class="txtSousMenu" >contact</span></a>
+
+                <a id="iconAccount" class="animated fadeIn" href="{{ path('fos_user_registration_register') }}"><img class="tailleIcon" src="{{ asset('img/icon/account.png') }}"><br/><span class="txtSousMenu" style="font-size:xx-small ">my account</span></a>
+            </div>
+        </header>
+
+
+
+    <div id="ligne1Menu" class="row">
+
+    <div id="photo1" class="col-md-5 hidden-sm-down">
+        <div  style="margin-left: 5%;margin-top: 15%">
+        <h1>It's driving a <br>revolution</h1>
+        <img id="line1" src="{{ asset('img/line.png') }}"><br>
+        W.TEKAM, Blockchain Engineer
+    </div>
+    </div>
+
+<div id="photo2"class="col-md-7">
+
+    <div style="margin-left: 10%;margin-top: 7%">
+        <h1>Every person</h1>
+        <blockquote>needs to know about blockchain
+        <br>because it might be one of the world's
+        <br>most important developments.
+        </blockquote>
+    </div>
+    <div style="margin-left: 20%">
+        <img style="margin-left: 53%" id="line1" src="{{ asset('img/line.png') }}"><br>
+       <p style="margin-left: 35%">M.Ratsiraka, Developper, Co-Founder</p>
+    </div>
+
+    <a id="BoutonProjetLien" href="{{ path('projet') }}"><button id="buttonProjet2">< Project + ></button></a>
+
+
+</div>
+</div>
+
+    <footer id="footerMenu" class="row">
+<div id="photo3" class="col-md-7">
+    <div style="margin-left: 10%;margin-top: 15%">
+        <h1>Blockchain is more</h1>
+        <blockquote>than just ICT innovation,but facilitates new
+            <br>types of economic organization and governance.<br>
+        </blockquote>
+    </div>
+    <br>
+    <div style="margin-left: 30%">
+        <img style="margin-left: 53%" id="line1" src="{{ asset('img/line.png') }}"><br>
+        <p style="margin-left: 35%">M.W.Samai, Blockchain Enginneer</p>
+    </div>
+</div>
+        <div id="photo4" class="col-md-5 hidden-sm-down">
+
+            <div style="margin-left: 5%;margin-top: 5%">
+                <h1>Free of politics<br>& human error</h1>
+                <img id="line1" src="{{ asset('img/line.png') }}"><br>
+                W.TEKAM, Blockchain Enginneer
+            </div>
+
+        </div>
+
+    </footer>
+
+</div>
+
+    </div>
+
+
+{% endblock %}

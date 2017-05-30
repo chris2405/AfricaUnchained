@@ -1,0 +1,64 @@
+{% extends 'layout/base.html.twig' %}
+
+{% block body %}
+
+    <div id="bodyMenu" class="animsition">
+    <div class="container">
+    <header id="headMenu" class="row">
+
+        <div class="col-md-4 col-sm-12 col-xs-12">
+            <div id="title2" class="animated fadeIn animated zoomInDown"><img src="{{ asset('img/icon/logopetit.png') }}" class="animated pulse"></div></div>
+        <div class="col-md-4"></div>
+        <div id="les3IconsMenu" class="col-md-4 hidden-sm-down animated pulse">
+
+            <a id="iconMenu" class="animated fadeIn" href="{{ path('menu') }}"><img class="tailleIcon" src="{{ asset('img/icon/close.png') }}"><br/><span  class="txtSousMenu">back</span></a>
+
+            <a id="iconContact" class="animated fadeIn" href="{{ path('fos_user_registration_register') }}"><img class="tailleIcon" src="{{ asset('img/icon/contact.png') }}"><br/><span class="txtSousMenu" >contact</span></a>
+
+            <a id="iconAccount" class="animated fadeIn" href="{{ path('fos_user_registration_register') }}"><img class="tailleIcon" src="{{ asset('img/icon/account.png') }}"><br/><span class="txtSousMenu" style="font-size:xx-small ">my account</span></a>
+        </div>
+    </header>
+
+        <footer id="footerProjet" class="row" style="height: 90%;">
+
+            <div class="col-md-6">
+
+                <div id="textProjet">
+                    <h1>Every person</h1>
+                    <blockquote>needs to know about blockchain
+                        <br>because it might be one of the world's
+                        <br>most important developments.
+                    </blockquote>
+                </div>
+                <div style="margin-left: 15%">
+                    <img id="line1" src="{{ asset('img/line.png') }}"><br>
+                    <p>M.Ratsiraka, Developper, Co-Founder</p>
+                </div>
+
+<div style="text-align: left;margin-top: 15%">
+                <button id="buttonInvolved" style="margin-left: 10%">< get involved !</button><br><br>
+    <div style="margin-left: 15%">
+       name   <<input id="nom" type="text">><br>
+        <div id="start"><<input id="start2" type="text" style="text-align: center" placeholder="start">></div>
+</div>
+                </div>
+
+            </div>
+            <div class="col-md-6">
+                    <h1 style="margin-top: 5%">< projets</h1>
+                <div style="margin-left: 25%;margin-top: 5%;">
+                    <p> industries ></p>
+                    <p> applications ></p>
+                    <p> source codes ></p>
+                    <p> testimonials ></p>
+                </div>
+                <br>
+
+            </div>
+
+        </footer>
+
+    </div>
+    </div>
+
+{% endblock %}

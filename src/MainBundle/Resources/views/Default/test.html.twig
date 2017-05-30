@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title></title>
+        {#<link href="{{ asset('css/test.css') }}" rel="stylesheet">#}
+    <link href="{{ asset('css/animsition.css') }}" rel="stylesheet">
+</head>
+<body style="height: 100%;width: 100%;background-color: #ff8812;">
+<style>
+    html,body{
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+</style>
+
+<div class="animsition" d style="height: 100%;width: 100%">
+
+
+<p ata-animsition-in-class=fade-in-up-lg" data-animsition-in-duration="500" >On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions, et empêche de se concentrer sur la mise en page elle-même. L'avantage du Lorem Ipsum sur un texte générique comme 'Du texte. Du texte. Du texte.' est qu'il possède une distribution de lettres plus ou moins normale, et en tout cas comparable avec celle du français standard. De nombreuses suites logicielles de mise en page ou éditeurs de sites Web ont fait du Lorem Ipsum leur faux texte par défaut, et une recherche pour 'Lorem Ipsum' vous conduira vers de nombreux sites qui n'en sont encore qu'à leur phase de construction. Plusieurs versions sont apparues avec le temps, parfois par accident, souvent intentionnellement (histoire d'y rajouter de petits clins d'oeil, voire des phrases embarassantes).
+
+    D'où vient-il?
+
+    Contrairement à une opinion répandue, le Lorem Ipsum n'est pas simplement du texte aléatoire. Il trouve ses racines dans une oeuvre de la littérature latine classique datant de 45 av. J.-C., le rendant vieux de 2000 ans. Un professeur du Hampden-Sydney College, en Virginie, s'est intéressé à un des mots latins les plus obscurs, consectetur, extrait d'un passage du Lorem Ipsum, et en étudiant tous les usages de ce mot dans la littérature classique, découvrit la source incontestable du Lorem Ipsum. Il provient en fait des sections 1.10.32 et 1.10.33 du "De Finibus Bonorum et Malorum" (Des Suprêmes Biens et des Suprêmes Maux) de Cicéron. Cet ouvrage, très populaire pendant la Renaissance, est un traité sur la théorie de l'éthique. Les premières lignes du Lorem Ipsum, "Lorem ipsum dolor sit amet...", proviennent de la section 1.10.32.
+
+    L'extrait standard de Lorem Ipsum utilisé depuis le XVIè siècle est reproduit ci-dessous pour les curieux. Les sections 1.10.32 et 1.10.33 du "De Finibus Bonorum et Malorum" de Cicéron sont aussi reproduites dans leur version originale, accompagnée de la traduction anglaise de H. Rackham (1914).
+    Où puis-je m'en procurer?
+
+    Plusieurs variations de Lorem Ipsum peuvent être trouvées ici ou là, mais la majeure partie d'entre elles a été altérée par l'addition d'humour ou de mots aléatoires qui ne ressemblent pas une seconde à du texte standard. Si vous voulez utiliser un passage du Lorem Ipsum, vous devez être sûr qu'il n'y a rien d'embarrassant caché dans le texte. Tous les générateurs de Lorem Ipsum sur Internet tendent à reproduire le même extrait sans fin, ce qui fait de lipsum.com le seul vrai générateur de Lorem Ipsum. Iil utilise un dictionnaire de plus de 200 mots latins, en combinaison de plusieurs structures de phrases, pour générer un Lorem Ipsum irréprochable. Le Lorem Ipsum ainsi obtenu ne contient aucune répétition, ni ne contient des mots farfelus, ou des touches d'humour.</p>
+{#<div class="animsition">#}
+    {#<a href="{{ path('test') }}" class="animsition-link" data-animsition-out-class="fade-out-right"#}
+       {#data-animsition-out-duration="2000">animsition link 1</a>#}
+    {#<a href="{{ path('test2') }}" class="animsition-link"  data-animsition-out-class="rotate-out"#}
+       {#data-animsition-out-duration="500">animsition link 2</a>#}
+{#</div>#}
+
+{#<div class="blur">#}
+    {#<img style="height: 100%;width: 100%" src="{{ asset('img/home.png') }}" class="bg">#}
+{#</div>#}
+
+{#<svg version="1.1" xmlns="http://www.w3.org/2000/svg">#}
+    {#<filter id="blur">#}
+        {#<feGaussianBlur stdDeviation="4" />#}
+    {#</filter>#}
+{#</svg>#}
+
+
+{#<div class="container">#}
+
+    {#<div class="col-lg-offset-2 col-lg-8">#}
+
+        {#<div class="carousel slide" data-ride="carousel">#}
+
+            {#<div class="carousel-inner">#}
+
+                {#<div class="item active"> <img alt="" src="{{ asset('img/home.png') }}"></div>#}
+
+                {#<div class="item"> <img alt="" src="{{ asset('img/foto5.jpg') }}"></div>#}
+
+            {#</div>#}
+
+        {#</div>#}
+
+    {#</div>#}
+
+{#</div>#}
+
+    <a href="{{ path('test') }}" class="animsition-link" data-animsition-out-class="fade-out-right"
+       data-animsition-out-duration="2000">animsition link 1</a>
+    <a href="{{ path('test2') }}" class="animsition-link"  data-animsition-out-class="rotate-out"
+       data-animsition-out-duration="500">animsition link 2</a>
+
+
+</div>
+
+<script src="{{ asset('js/jquery-3.2.1.js') }}"></script>
+<script src="{{ asset('js/animsition.js') }}"></script>
+{#<script src="{{ asset('js/carousel.js') }}"></script>#}
+<script src="{{ asset('js/main.js') }}"></script>
+<script src="{{ asset('js/bootstrap.min.js') }}"></script>
+
+</body>
+</html>
+
+
+

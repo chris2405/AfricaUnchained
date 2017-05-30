@@ -1,0 +1,75 @@
+{% extends 'layout/base.html.twig' %}
+{% trans_default_domain 'FOSUserBundle' %}
+
+{% block SuiteHead %}
+    {{ include('FpJsFormValidatorBundle::javascripts.html.twig') }}{% endblock %}
+
+{% block body %}
+
+    <div id="bodyMenu" class="animsition">
+    <div class="container">
+    <header id="headMenu" class="row">
+        <div class="col-md-4 col-sm-12 col-xs-12">
+            <div id="title2" class="animated fadeIn animated zoomInDown"><img src="{{ asset('img/icon/logopetit.png') }}" class="animated pulse"></div></div>
+        <div class="col-md-4"></div>
+        <div id="les3IconsMenu" class="col-md-4 hidden-sm-down animated pulse">
+
+            <a id="iconMenu" class="animated fadeIn" href="{{ path('menu') }}"><img class="tailleIcon" src="{{ asset('img/icon/close.png') }}"><br/><span  class="txtSousMenu">back</span></a>
+
+            <a id="iconContact" class="animated fadeIn" href="{{ path('fos_user_registration_register') }}"><img class="tailleIcon" src="{{ asset('img/icon/contact.png') }}"><br/><span class="txtSousMenu" >contact</span></a>
+
+            <a id="iconAccount" class="animated fadeIn" href="{{ path('fos_user_registration_register') }}"><img class="tailleIcon" src="{{ asset('img/icon/account.png') }}"><br/><span class="txtSousMenu" style="font-size:xx-small ">my account</span></a>
+        </div>
+    </header>
+
+        <div class="row" style="height: 30%">
+            <div class="col-md-12">ligne 2
+            </div>
+        </div>
+    <footer class="row" style="height: 60%">
+    <div class="col-md-8" >
+        {#{{ dump(form) }}#}
+    {{ form_start(form)}}
+        <div class="slide1">
+        {{ form_label(form.username)}}
+        {{ form_widget(form.username)}}
+        {{ form_label(form.phone)}}
+        {{ form_widget(form.phone)}}
+        {{ form_label(form.email)}}
+        {{ form_widget(form.email)}}
+        </div>
+        <div class="slide2">
+        {{ form_label(form.occupation)}}
+        {{ form_widget(form.occupation)}}
+        {{ form_label(form.Autre)}}
+        {{ form_widget(form.Autre)}}
+        {{ form_label(form.Industry)}}
+        {{ form_widget(form.Industry)}}
+        </div>
+    <div class="slide">
+        {{ form_widget(form.plainPassword.first,{ 'attr': { 'placeholder' : 'Mot de passe'} }) }}
+        {{ form_widget(form.plainPassword.second,{ 'attr': {'placeholder' : 'Confirmation'} }) }}
+    </div>
+
+
+<div class="submit">
+        <input type="submit" value="{{ 'registration.submit'|trans }}"/>
+        </div>
+        {{ form_end(form) }}
+    </div>
+
+        <div class="col-md-4"><div id="" class="animated fadeIn"><input id="button" type="button" name="button" onclick="showUser()"/><br/><span style="margin-left: 5%">next</span>
+                <div id="SuivantForm" class="animated fadeIn"><input id="button" type="button" name="button" onclick="showUser()" class="button"/><br/><span style="margin-left: 5%">suivant</span>
+            </div>
+        </div>
+        </footer>
+
+
+    </div>
+    </div>
+
+    <div>
+
+
+    {% block SuiteJavascripts %}  <script src="{{ asset('js/form.js') }}"></script>{% endblock %}
+{% endblock %}

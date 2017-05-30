@@ -1,0 +1,20 @@
+main:
+    resource: "@MainBundle/Controller/MainController.php"
+    type:     annotation
+    prefix:   /
+
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation
+
+fos_user:
+    resource: "@FOSUserBundle/Resources/config/routing/all.xml"
+
+easy_admin_bundle:
+    resource: "@EasyAdminBundle/Controller/"
+    type:     annotation
+    prefix:   /admin
+
+fp_js_form_validator:
+    resource: "@FpJsFormValidatorBundle/Resources/config/routing.xml"
+    prefix: /fp_js_form_validator
