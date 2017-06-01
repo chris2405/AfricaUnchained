@@ -4,8 +4,198 @@
 @import "fonts";
 
 $color-black: #fff;
+$color-yellow: yellow;
+
+$background-img1: url(../img/F3.jpg);
+$background-img2: url(../img/L2.jpg);
 
 [class*="col-"] {
   border: 2px solid $color-black;
+}
+
+body{
+  //overflow: hidden;
+  font-family: nowayregular2, serif;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  color: $yellow;
+
+  &#img1{
+    background-image: $background-img1;
+    background-size: 100% 100%;
+  }
+  &#img2{
+    background-image: $background-img2;
+    background-size: 100% 120%;
+  }
+  header {
+    width: auto;
+    height: 15%;
+  }
+  #ligne2{
+    width: auto;
+    height: 28%;
+  }
+  #ligne2-2{
+    width: auto;
+    height: 27%;
+  }
+  #ligne2Interne{
+    height: 100%;
+  }
+  #ligne3 {
+    width: auto;
+    height: 47%;
+  }
+  footer {
+    width: auto;
+    height:10%;
+  }
+  #line2Home2{
+    margin-left: 64%;
+    width: 110px;
+    margin-top: -7%;
+  }
+  #bandeauNoir2{
+    height: 50%;
+    width: 100%;
+    opacity: 0.5;
+    background: rgb(0, 0, 0);
+    animation-duration: 1s;
+    margin-top: 45%;
+  }
+  #bandeauNoir {
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+    background: rgb(0, 0, 0);
+    animation-duration: 1s;
+  }
+
+  #paragraphe {
+    text-align: center;
+    color: beige;
+    font-size: large;
+    animation-delay: 2.3s;
+    transition-delay: 2s;
+  }
+  #paragraphe2{
+    text-align: center;
+    color: beige;
+    font-size: large;
+    animation-delay: 2.3s;
+    transition-delay: 2s;
+}
+  #text{
+    text-align: left;
+    margin-left: 35%;
+  }
+  #title {
+    animation-delay: 2.6s;
+    text-align: center;
+    padding-top: 8%;
+  }
+  .tailleIcon{
+    height: 40px;
+    width: 40px;
+    margin-right: 20px;
+  }
+
+  #les3Icons {
+    padding-top: 25%;
+    text-align: center;
+    animation-delay:1.2s ;
+  }
+
+  #les4Icons {
+    text-align: center;
+    padding-top: 22%;
+  }
+
+  #iconMenu {
+    animation-delay: 0.3s;
+  }
+
+  #iconAccount {
+
+    animation-delay: 0.6s;
+  }
+
+  #iconContact {
+    animation-delay: 0.9s;
+  }
+
+  #boutonNext {
+    padding-top: 35%;
+    padding-left: 60%;
+    animation-delay: 1.2s;
+    font-size: small;
+  }
+
+  #IconIsole{
+    animation-delay: 1.2s;
+  }
+  #learn {
+    text-align: center;
+    padding-top: 70%;
+    height:100%;
+  }
+
+  #cite {
+    padding-right: 100px;
+    margin-bottom: 1%;
+  }
+
+  #line1 {
+    width: 110px;
+    margin-right: 5%;
+  }
+  #line2 {
+    margin-top: -3.8%;
+    margin-left: 58%;
+    width: 110px;
+  }
+
+  #citeEtLine {
+    margin-right: 20%;
+  }
+
+  #motFin {
+    margin-left: 42%;
+    color: yellow;
+    margin-top: -2%;
+  }
+
+  #motFin2{
+    margin-left: 37%;
+    color: yellow;
+    margin-top: -4%;
+  }
+  a {
+    display: inline-block;
+    font-size: small;
+    color: yellow;
+    text-align: center;
+  }
+
+  .txtSousMenu {
+    margin-right: 32%;
+  }
+  #button{
+    background: url('../img/icon/slide suivant.png') no-repeat;
+    background-size: 40px 40px;
+    cursor:pointer;
+    border: none;
+    width: 40px;
+    height: 40px;
+  }
+
+  #buttonProject,#Precedent,#Suivant{
+    cursor:pointer;
+    border: none;
+    background: none;
+    color: yellow;
+  }
 }
 

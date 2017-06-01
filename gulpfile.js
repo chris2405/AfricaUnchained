@@ -42,7 +42,7 @@ gulp.task('minify', function () {
         .pipe(concat('styles.css'))
         .pipe(csso())
         .pipe(gulp.dest(dist))
-})
+});
 
 gulp.task('js', function () {
     return gulp.src([
@@ -56,15 +56,22 @@ gulp.task('js', function () {
         .pipe(gulp.dest(dist))
 });
 
+gulp.task('stream', function () {
+    return watch('css/**/*.css', { ignoreInitial: false })
+        .pipe(gulp.dest('build'));
+});
+
 gulp.task('dev', ['sass', 'js']);
 gulp.task('prod', ['dev', 'minify']);
 
 gulp.task('watch', function () {
-    return watch(src + 'css/**/*.css', ['dev']);
-});
-
-gulp.task('sass:watch', function () {
-    gulp.watch('./sass/**/*.bootstrap', ['sass']);
+     gulp.watch(src + 'css/styles.scss', ['sass']);
+     gulp.watch([
+         'web/js/jquery/jquery-3.2.1.js',
+         'web/js/tether/tether.min.js',
+         'web/js/bootstrap/bootstrap.min.js',
+         'web/js/main.js'
+     ], ['js']);
 });
 
 gulp.task('default', ['dev']);

@@ -18,7 +18,8 @@ $(document).ready(function(){
 
         $( "#paragraphe" ).replaceWith($("#paragraphe2"));
         $( "#paragraphe2" ).show();
-        $("#body").removeClass("img1");
+        $('body').attr('id', 'img1');
+
         // $("#conteneur").toggleClass("container2");
         $("#body").toggleClass("img2");
         $("#body").addClass("img2");
