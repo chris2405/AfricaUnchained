@@ -5,9 +5,22 @@ var uglify = require('gulp-uglify');
 var sourcemaps = require('gulp-sourcemaps');
 var watch = require('gulp-watch');
 var autoprefixer = require('gulp-autoprefixer');
+var sass = require('gulp-sass');
 
 var src = 'web/';
 var dist = 'web/dist';
+
+gulp.task('sass', function () {
+    return gulp.src(src + 'css/styles.scss')
+        .pipe(autoprefixer({
+            browsers :['last 3 versions'],
+            cascade : false
+        }))
+        .pipe(sourcemaps.init())
+        .pipe(sass().on('error', sass.logError))
+        .pipe(sourcemaps.write())
+        .pipe(gulp.dest(dist));
+});
 
 gulp.task('css', function(){
     return gulp.src(src + 'css/**/*.css')
@@ -43,11 +56,15 @@ gulp.task('js', function () {
         .pipe(gulp.dest(dist))
 });
 
-gulp.task('dev', ['css', 'js']);
+gulp.task('dev', ['sass', 'js']);
 gulp.task('prod', ['dev', 'minify']);
 
 gulp.task('watch', function () {
     return watch(src + 'css/**/*.css', ['dev']);
+});
+
+gulp.task('sass:watch', function () {
+    gulp.watch('./sass/**/*.bootstrap', ['sass']);
 });
 
 gulp.task('default', ['dev']);

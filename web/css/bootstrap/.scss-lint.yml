@@ -1,10 +1,10 @@
 # Default application configuration that all configurations inherit from.
 scss_files:
   - "**/*.scss"
-  - "docs/assets/scss/**/*.scss"
+  - "docs/assets/bootstrap/**/*.bootstrap"
 
 exclude:
-  - "scss/_normalize.scss"
+  - "bootstrap/_normalize.bootstrap"
 
 plugin_directories: ['.scss-linters']
 

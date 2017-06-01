@@ -157,12 +157,12 @@
           align-items: center;
         }
 
-        // scss-lint:disable ImportantRule
+        // bootstrap-lint:disable ImportantRule
         .navbar-collapse {
           display: flex !important;
           width: 100%;
         }
-        // scss-lint:enable ImportantRule
+        // bootstrap-lint:enable ImportantRule
 
         .navbar-toggler {
           display: none;

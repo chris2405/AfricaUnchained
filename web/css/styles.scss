@@ -1,1 +1,11 @@
-@import "bootstrap"
+@import "bootstrap/bootstrap";
+@import "animsition.css";
+@import "animate.css";
+@import "fonts";
+
+$color-black: #fff;
+
+[class*="col-"] {
+  border: 2px solid $color-black;
+}
+
