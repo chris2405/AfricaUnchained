@@ -1,11 +1,12 @@
 @import "bootstrap/bootstrap";
-@import "animsition.css";
-@import "animate.css";
+@import "animate";
+
+
 @import "fonts";
 @import "mixins";
 @import "buttons";
 
-$color-black: #fff;
+$color-black: #000;
 $color-yellow: yellow;
 $size-icon: 40px;
 
@@ -68,16 +69,21 @@ body{
   div[class*="col-"]{
     height: 14rem;
   }
+  .bandeau-noir {
+    position: absolute;
+    opacity: 0.5;
+    background: $color-black;
+    animation-duration: 1s;
+    height: 100%;
+  }
   .learn {
     height: 100%;
     @include center-element();
     a{
       display: inline-block;
       font-size: small;
-      color: $color-yellow;
     }
   }
-
 }
 #button{
   background: url('../img/icon/slide suivant.png') no-repeat;

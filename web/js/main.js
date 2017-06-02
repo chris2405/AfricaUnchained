@@ -1,19 +1,6 @@
-/* general*/
-
-// alert("function");
-
-$(".animsition").animsition({
-    inClass: 'fade-in-right-lg',
-    outClass: 'fade-out-right-lg',
-    // inDuration: 1500,
-    // outDuration: 800,
-});
-
-/* HomePage   */
-
-$( "#paragraphe2" ).hide();
-$( "#ligne2-2" ).hide();
 $(document).ready(function(){
+    $( "#paragraphe2" ).hide();
+    $( "#ligne2-2" ).hide();
 
     $("#button").click(function(){
         $( "#paragraphe" ).replaceWith($("#paragraphe2"));
@@ -28,14 +15,7 @@ $(document).ready(function(){
 
     });
 
-});
-
-
-/* action click bouton IconMenu*/
-
-$(document).ready(function(){
     $("#iconMenu").click(function(){
 
     });
-
 });

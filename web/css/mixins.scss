@@ -15,7 +15,10 @@
 }
 
 @mixin  btn-africauncained{
-  color: yellow;
-  background-color: transparent;
-  border-color: transparent;
+  color: white;
+  background-color: #7b7b00;
+  border-color: #dcdc1d;
+  &:hover{
+    background-color: #7b5d08;
+  }
 }
