@@ -2,9 +2,12 @@
 @import "animsition.css";
 @import "animate.css";
 @import "fonts";
+@import "mixins";
+@import "buttons";
 
 $color-black: #fff;
 $color-yellow: yellow;
+$size-icon: 40px;
 
 $background-img1: url(../img/F3.jpg);
 $background-img2: url(../img/L2.jpg);
@@ -14,29 +17,83 @@ $background-img2: url(../img/L2.jpg);
 }
 
 body{
-  //overflow: hidden;
+  overflow: hidden;
   font-family: nowayregular2, serif;
   height: 100%;
   width: 100%;
   background-repeat: no-repeat;
   color: $yellow;
-
   &#img1{
     background-image: $background-img1;
-    background-size: 100% 100%;
+    background-size: cover;
   }
   &#img2{
     background-image: $background-img2;
-    background-size: 100% 120%;
+    background-size: cover;
   }
-  header {
-    width: auto;
-    height: 15%;
+  .container{
+    width: 100%;
+    margin: 0;
+    padding: 0;
   }
-  #ligne2{
-    width: auto;
-    height: 28%;
+  .container .row{
+    width: 100%;
+    margin:0;
+     .title{
+       img{
+        @include center-image;
+         animation-delay: 2.6s;
+       }
+     }
+    .les-3-icons  {
+      display: flex;
+      justify-content: space-around;
+      vertical-align:middle;
+      padding-top: 1%;
+      a {
+        @include center-element();
+
+        img{
+          width: $size-icon;
+        }
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
   }
+}
+
+#ligne2{
+  div[class*="col-"]{
+    height: 14rem;
+  }
+  .learn {
+    height: 100%;
+    @include center-element();
+    a{
+      display: inline-block;
+      font-size: small;
+      color: $color-yellow;
+    }
+  }
+
+}
+#button{
+  background: url('../img/icon/slide suivant.png') no-repeat;
+  background-size: 40px 40px;
+  cursor:pointer;
+  border: none;
+  width: 40px;
+  height: 40px;
+  @include center-image;
+}
+
+#boutonNext {
+  @include center-image;
+  animation-delay: 1.2s;
+}
+
   #ligne2-2{
     width: auto;
     height: 27%;
@@ -91,22 +148,13 @@ body{
     text-align: left;
     margin-left: 35%;
   }
-  #title {
-    animation-delay: 2.6s;
-    text-align: center;
-    padding-top: 8%;
-  }
+
   .tailleIcon{
     height: 40px;
     width: 40px;
     margin-right: 20px;
   }
 
-  #les3Icons {
-    padding-top: 25%;
-    text-align: center;
-    animation-delay:1.2s ;
-  }
 
   #les4Icons {
     text-align: center;
@@ -126,20 +174,9 @@ body{
     animation-delay: 0.9s;
   }
 
-  #boutonNext {
-    padding-top: 35%;
-    padding-left: 60%;
-    animation-delay: 1.2s;
-    font-size: small;
-  }
 
   #IconIsole{
     animation-delay: 1.2s;
-  }
-  #learn {
-    text-align: center;
-    padding-top: 70%;
-    height:100%;
   }
 
   #cite {
@@ -182,14 +219,6 @@ body{
   .txtSousMenu {
     margin-right: 32%;
   }
-  #button{
-    background: url('../img/icon/slide suivant.png') no-repeat;
-    background-size: 40px 40px;
-    cursor:pointer;
-    border: none;
-    width: 40px;
-    height: 40px;
-  }
 
   #buttonProject,#Precedent,#Suivant{
     cursor:pointer;
@@ -197,5 +226,4 @@ body{
     background: none;
     color: yellow;
   }
-}
 

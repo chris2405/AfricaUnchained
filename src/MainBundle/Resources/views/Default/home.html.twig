@@ -5,108 +5,154 @@
 {% block body_id "img1" %}
 
 {% block body %}
-
     <div class="container">
-
-        <header class="row">
-
+        <div class="row">
             <div class="col-md-4 col-sm-12 col-xs-12">
-                <div id="title" class="animated fadeIn animated zoomInDown"><img src="{{ asset('img/icon/logopaysage.png') }}" class="animated pulse"></div></div>
-            <div class="col-md-4"></div>
-            <div id="les3Icons" class="col-md-4 hidden-sm-down animated pulse">
-
-               <a id="iconMenu" class="animated fadeIn" href="{{ path('menu') }}"><img class="tailleIcon" src="{{ asset('img/icon/menu.png') }}"><br/><span  class="txtSousMenu">menu</span></a>
-
-                <a id="iconContact" class="animated fadeIn" href="{{ path('fos_user_registration_register') }}"><img class="tailleIcon" src="{{ asset('img/icon/contact.png') }}"><br/><span class="txtSousMenu" >contact</span></a>
-
-                <a id="iconAccount" class="animated fadeIn" href="{{ path('fos_user_registration_register') }}"><img class="tailleIcon" src="{{ asset('img/icon/account.png') }}"><br/><span class="txtSousMenu" style="font-size:xx-small ">my account</span></a>
+                <div class="animated fadeIn animated zoomInDown title">
+                    <img src="{{ asset('img/icon/logopaysage.png') }}" class="animated pulse" />
+                </div>
             </div>
-        </header>
+            <div class="col-md-4"></div>
+            <div class="col-md-4 hidden-sm-down animated pulse les-3-icons">
+                <a id="iconMenu" class="animated fadeIn" href="{{ path('menu') }}">
+                    <img class="tailleIcon" src="{{ asset('img/icon/menu.png') }}">
+                    <div class="txtSousMenu">menu</div>
+                </a>
+                <a id="iconContact" class="animated fadeIn" href="{{ path('fos_user_registration_register') }}">
+                    <img class="tailleIcon" src="{{ asset('img/icon/contact.png') }}">
+                    <div class="txtSousMenu">contact</div>
+                </a>
+                <a id="iconAccount" class="animated fadeIn" href="{{ path('fos_user_registration_register') }}">
+                    <img class="tailleIcon" src="{{ asset('img/icon/account.png') }}">
+                    <div class="txtSousMenu">my account</div>
+                </a>
+            </div>
+        </div>
 
         <div id="ligne2" class="row">
-            <div id="bandeauNoir" class=" col-md-12 animated slideInRight">
-                    <div id="ligne2Interne" class="row">
-                        <div class="col-md-8"></div>
-                        <div id="learn" class="col-md-4">
-                            <a id="BoutonProjetLien" href="{{ path('projet') }}"><button id="buttonProject">< learn + ></button></a>
-                    </div>
+            <div class="col-8">hhhhhhhhhhhhhhhhhh
             </div>
-
-        </div>
-        </div>
-
-        <div id="ligne2-2" class="row">
-            <div id="bandeauNoir2" class=" col-md-12 animated slideInRight">
-                <div id="ligne2Interne" class="row">
-                    <div class="col-md-8"></div>
-                    <div id="learn" class="col-md-4">
-
-                        <a id="BoutonProjetLien" href="{{ path('projet') }}"><button id="buttonProject">< Project + ></button></a>
-
-                        </div>
+            <div class="col-4">
+                <div class="learn">
+                    <a class="btn btn-africaunchained" href="{{ path('projet') }}">
+                        < learn + >
+                    </a>
                 </div>
             </div>
-
         </div>
 
-
-        <div id="ligne3" class="row">
-            <div class="col-md-4 hidden-sm-down hidden-xs-down ">
-                <div id="boutonNext" class="animated fadeIn"><input id="button" type="button" name="button" onclick="showUser()" class="button"/><br/><span style="margin-left: 5%">next</span>
+        <div id="paragraphe" class="row">
+            <div class="col-6">
+                <div id="boutonNext" class="animated fadeIn">
+                    <input id="button" type="button" name="button" onclick="showUser()" class="button"/>
                 </div>
             </div>
-
-
-            <div id="paragraphe" class="col-md-8 col-sm-12 col-xs-12 animated zoomIn ">
-
-                <div id="citeEtLine"><img id="cite"  src="{{ asset('img/cite.png') }}"><br><img id="line1" src="{{ asset('img/icon/line.png') }}"></div>
-                <div id="text" style="">
-                <h1>Blockchain is</h1>
-                <blockquote CLASS="sizeText">a remarkable cryptographic
-                    <br>achievement ant the ability to create
-                    <br>something that is not duplicable in
-                    <br>the digital world has enormous value.
-                </blockquote>
+            <div class="col-6">
+                <div id="citeEtLine">
+                    <img id="cite"  src="{{ asset('img/cite.png') }}">
+                    <img id="line1" src="{{ asset('img/icon/line.png') }}">
                 </div>
-                    <img id="line2" src="{{ asset('img/icon/line.png') }}"><br>
-                <div id="motFin">M.Ravony, CEO ,Co-Founder</div>
-            </div>
-
-        </div>
-
-            <div id="paragraphe2" class="col-md-8 col-sm-12 col-xs-12 animated zoomIn ">
-
-                <div id="citeEtLine"><img id="cite"  src="{{ asset('img/cite.png') }}"><br><img id="line1" src="{{ asset('img/icon/line.png') }}"></div>
                 <div id="text">
-                    <h1>I'm reasonably <br>confident</h1>
-                    <blockquote class="sizeText">that the blockchain will change a
-                        <br>great deal of financial practice and
-                        <br> exchange.
+                    <h1>Blockchain is</h1>
+                    <blockquote CLASS="sizeText">a remarkable cryptographic
+                        <br>achievement ant the ability to create
+                        <br>something that is not duplicable in
+                        <br>the digital world has enormous value.
                     </blockquote>
                 </div>
-                <img id="line2Home2" src="{{ asset('img/icon/line.png') }}"><br>
-                <div id="motFin2">C.H.Ravony, Idea Architect,Co-Founder</div>
-            </div>
-
-
-        <footer class="row"><div id="les4Icons" class="col-lg-12 hidden-md-up col-sm-offset-12 col-xs-offset-12">
-
-                {#<div id="IconIsole" class="animated fadeIn"><input id="button" type="button" name="button" onclick="showUser()" class="button"/><br/><span>next</span></div>#}
-
-                <a id="IconIsole" class="animated fadeIn" href="{{ path('fos_user_registration_register') }}"><img class="tailleIcon" src="{{ asset('img/icon/slide suivant.png') }}"><br/><span class="txtSousMenu">next</span></a>
-
-                <a id="iconMenu" class="animated fadeIn" href="{{ path('menu') }}"><img class="tailleIcon" src="{{ asset('img/icon/menu.png') }}"><br/><span  class="txtSousMenu">menu</span></a>
-
-                <a id="iconContact" class="animated fadeIn" href="{{ path('fos_user_registration_register') }}"><img class="tailleIcon" src="{{ asset('img/icon/contact.png') }}"><br/><span class="txtSousMenu" >contact</span></a>
-
-                <a id="iconAccount" class="animated fadeIn" href="{{ path('fos_user_registration_register') }}"><img class="tailleIcon" src="{{ asset('img/icon/account.png') }}"><br/><span class="txtSousMenu" style="font-size:xx-small ">my account</span></a>
-
-            </div>
-        </footer>
-
+                <img id="line2" src="{{ asset('img/icon/line.png') }}">
+                <br>
+                <div id="motFin">
+                    M.Ravony, CEO ,Co-Founder
+                </div>
+             </div>
+        </div>
     </div>
 
-    </div>
+
+
+    {#<div class="container">#}
+        {#<div class="row">#}
+       {##}
+        {#</div>#}
+    {#</div>#}
+
+    {#<div id="ligne2-2" class="row">#}
+    {#<div id="bandeauNoir2" class=" col-md-12 animated slideInRight">#}
+    {#<div id="ligne2Interne" class="row">#}
+    {#<div class="col-md-8"></div>#}
+    {#<div id="learn" class="col-md-4">#}
+
+    {#<a id="BoutonProjetLien" href="{{ path('projet') }}"><button id="buttonProject">< Project + ></button></a>#}
+
+    {#</div>#}
+    {#</div>#}
+    {#</div>#}
+
+    {#</div>#}
+    {#<div class="container">#}
+        {#<div class="row">#}
+            {#<div id="ligne3" class="row">#}
+                {#<div class="col-md-4 hidden-sm-down hidden-xs-down ">#}
+                    {#<div id="boutonNext" class="animated fadeIn">#}
+                        {#<input id="button" type="button" name="button" onclick="showUser()" class="button"/>#}
+                        {#<span style="margin-left: 5%">next</span>#}
+                    {#</div>#}
+                {#</div>#}
+
+                {#<div id="paragraphe" class="col-md-8 col-sm-12 col-xs-12 animated zoomIn ">#}
+                    {#<div id="citeEtLine"><img id="cite"  src="{{ asset('img/cite.png') }}">#}
+                        {#<img id="line1" src="{{ asset('img/icon/line.png') }}"></div>#}
+                    {#<div id="text" style="">#}
+                        {#<h1>Blockchain is</h1>#}
+                        {#<blockquote CLASS="sizeText">a remarkable cryptographic#}
+                            {#<br>achievement ant the ability to create#}
+                            {#<br>something that is not duplicable in#}
+                            {#<br>the digital world has enormous value.#}
+                        {#</blockquote>#}
+                    {#</div>#}
+                    {#<img id="line2" src="{{ asset('img/icon/line.png') }}"><br>#}
+                    {#<div id="motFin">M.Ravony, CEO ,Co-Founder</div>#}
+                {#</div>#}
+
+            {#</div>#}
+        {#</div>#}
+    {#</div>#}
+    {#<div id="paragraphe2" class="col-md-8 col-sm-12 col-xs-12 animated zoomIn ">#}
+
+    {#<div id="citeEtLine"><img id="cite"  src="{{ asset('img/cite.png') }}"><br><img id="line1" src="{{ asset('img/icon/line.png') }}"></div>#}
+    {#<div id="text">#}
+    {#<h1>I'm reasonably <br>confident</h1>#}
+    {#<blockquote class="sizeText">that the blockchain will change a#}
+    {#<br>great deal of financial practice and#}
+    {#<br> exchange.#}
+    {#</blockquote>#}
+    {#</div>#}
+    {#<img id="line2Home2" src="{{ asset('img/icon/line.png') }}"><br>#}
+    {#<div id="motFin2">C.H.Ravony, Idea Architect,Co-Founder</div>#}
+    {#</div>#}
+    {#<div class="container">#}
+        {#<div class="row">#}
+            {#<div id="les4Icons" class="col-lg-12 hidden-md-up col-sm-offset-12 col-xs-offset-12">#}
+                {#<a id="IconIsole" class="animated fadeIn" href="{{ path('fos_user_registration_register') }}">#}
+                    {#<img class="tailleIcon" src="{{ asset('img/icon/slide suivant.png') }}">#}
+                    {#<span class="txtSousMenu">next</span>#}
+                {#</a>#}
+                {#<a id="iconMenu" class="animated fadeIn" href="{{ path('menu') }}">#}
+                    {#<img class="tailleIcon" src="{{ asset('img/icon/menu.png') }}">#}
+                    {#<span  class="txtSousMenu">menu</span>#}
+                {#</a>#}
+                {#<a id="iconContact" class="animated fadeIn" href="{{ path('fos_user_registration_register') }}">#}
+                    {#<img class="tailleIcon" src="{{ asset('img/icon/contact.png') }}">#}
+                    {#<span class="txtSousMenu" >contact</span>#}
+                {#</a>#}
+                {#<a id="iconAccount" class="animated fadeIn" href="{{ path('fos_user_registration_register') }}">#}
+                    {#<img class="tailleIcon" src="{{ asset('img/icon/account.png') }}">#}
+                    {#<span class="txtSousMenu" style="font-size:xx-small ">my account</span>#}
+                {#</a>#}
+            {#</div>#}
+        {#</div>#}
+    {#</div>#}
 
 {% endblock %}
 

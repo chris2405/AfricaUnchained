@@ -14,8 +14,8 @@ $(".animsition").animsition({
 $( "#paragraphe2" ).hide();
 $( "#ligne2-2" ).hide();
 $(document).ready(function(){
-    $("#button").click(function(){
 
+    $("#button").click(function(){
         $( "#paragraphe" ).replaceWith($("#paragraphe2"));
         $( "#paragraphe2" ).show();
         $('body').attr('id', 'img1');

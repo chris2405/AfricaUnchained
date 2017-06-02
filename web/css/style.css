@@ -40,23 +40,23 @@
 }
 
 #photo1{
-    background: url(/img/pageMenu/mereFilleO.jpg);
+    background: url(../img/pageMenu/mereFilleO.jpg);
     background-size: cover;
 
 
 }
 #photo2{
-    background: url(/img/pageMenu/childO.jpg);
+    background: url(../img/pageMenu/childO.jpg);
     background-size: cover;
 }
 
 
 #photo3{
-    background: url(/img/pageMenu/mereFilsO.jpg);
+    background: url(../img/pageMenu/mereFilsO.jpg);
     background-size: cover;
       }
 #photo4 {
-    background: url(/img/pageMenu/teenagerO.jpg);
+    background: url(../img/pageMenu/teenagerO.jpg);
     background-size: cover;
 }
 
@@ -86,7 +86,7 @@
 /* fin pageMenu*/
 
 #footerProjet{
-    background: url(/img/pageProjet/childProjet.jpg);
+    background: url(../img/pageProjet/childProjet.jpg);
     background-size: cover;
 }
 
@@ -111,7 +111,7 @@
 }
 
 #NextForm{
-    background: url('/img/icon/arriere.png') no-repeat;
+    background: url('../img/icon/arriere.png') no-repeat;
     padding-top: 35%;
     padding-left: 60%;
     animation-delay: 1.2s;
@@ -119,7 +119,7 @@
 }
 
 #SuivantForm{
-    background: url('/img/icon/suivant.png') no-repeat;
+    background: url('../img/icon/suivant.png') no-repeat;
     padding-top: 35%;
     padding-left: 60%;
     animation-delay: 1.2s;
