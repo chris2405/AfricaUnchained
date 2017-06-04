@@ -7,25 +7,6 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 
 class MainController extends Controller
 {
-
-    /**
-     * @Route("/test",name="test")
-     */
-    public function test()
-    {
-
-        return $this->render('@Main/Default/test.html.twig');
-    }
-
-    /**
-     * @Route("/test2",name="test2")
-     */
-    public function test2()
-    {
-
-        return $this->render('@Main/Default/test2.html.twig');
-    }
-
     /**
      * @Route("/",name="home")
      */

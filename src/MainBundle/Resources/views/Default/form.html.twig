@@ -6,30 +6,44 @@
 
     {% block body %}
 
-        <div id="bodyMenu" class="animsition">
             <div class="container">
-                <header id="headMenu" class="row">
-
-                    <div class="col-md-4 col-sm-12 col-xs-12">
-                        <div id="title2" class="animated fadeIn animated zoomInDown"><img src="{{ asset('img/icon/logopetit.png') }}" class="animated pulse"></div></div>
-                    <div class="col-md-4"></div>
-                    <div id="les3IconsMenu" class="col-md-4 hidden-sm-down animated pulse">
-
-                        <a id="iconMenu" class="animated fadeIn" href="{{ path('menu') }}"><img class="tailleIcon" src="{{ asset('img/icon/close.png') }}"><br/><span  class="txtSousMenu">back</span></a>
-
-                        <a id="iconContact" class="animated fadeIn" href="{{ path('fos_user_registration_register') }}"><img class="tailleIcon" src="{{ asset('img/icon/contact.png') }}"><br/><span class="txtSousMenu" >contact</span></a>
-
-                        <a id="iconAccount" class="animated fadeIn" href="{{ path('fos_user_registration_register') }}"><img class="tailleIcon" src="{{ asset('img/icon/account.png') }}"><br/><span class="txtSousMenu" style="font-size:xx-small ">my account</span></a>
-                    </div>
-                </header>
-
-
-                <div class="row" style="height: 30%">
-                    <div class="col-md-12">ligne 2
+                <div class="color-orange">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-12 col-xs-12">
+                            <div class="animated fadeIn animated zoomInDown title2">
+                                <img src="{{ asset('img/icon/logopetit.png') }}" class="animated pulse">
+                            </div>
+                        </div>
+                        <div class="col-md-4"></div>
+                        <div class="col-md-4 hidden-sm-down animated pulse les-3-icons">
+                            <a id="iconMenu" class="animated fadeIn" href="{{ path('menu') }}">
+                                <img class="tailleIcon" src="{{ asset('img/icon/close.png') }}">
+                                <div class="txtSousMenu">
+                                    back
+                                </div>
+                            </a>
+                            <a id="iconContact" class="animated fadeIn" href="{{ path('fos_user_registration_register') }}">
+                                <img class="tailleIcon" src="{{ asset('img/icon/contact.png') }}">
+                                <div class="txtSousMenu">
+                                    contact
+                                </div>
+                            </a>
+                            <a id="iconAccount" class="animated fadeIn" href="{{ path('fos_user_registration_register') }}">
+                                <img class="tailleIcon" src="{{ asset('img/icon/account.png') }}">
+                                <div class="txtSousMenu">my account
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
 
-                <footer class="row" style="height: 100%">
+                <div id="ligne2Form" class="row">
+                    <div class="col-md-12">
+                        ligne 2
+                    </div>
+                </div>
+
+                <div id="ligne3Form" class="row">
                     <div class="col-md-8" >
                         <form>
                             <div class="one">
@@ -53,23 +67,25 @@
                             </div>
 
                             <div class="two">
-
+                            <p>
                                 message<br>
                                 <input name="..." data-validation="email" data-validation-help="Som help info...">
                                 </p>
                             </div>
                         </form>
 
-
                     </div>
-                    <div class="col-md-4"> icon</div>
+                    <div class="col-md-4">
+                        <div id="boutonNext" class="animated fadeIn">
+                            <input id="button"  type="button"/>
+                        </div>
+                    </div>
 
-                </footer>
+                </div>
             </div>
-        </div>
 
-        {% block SuiteJavascripts %}  <script src="{{ asset('js2/js2/jquery.fpjsformvalidator.js2') }}"></script>
-            <script src="{{ asset('js2/form.js2') }}"></script>
+        {% block SuiteJavascripts %}  <script src="{{ asset('') }}"></script>
+            <script src="{{ asset('') }}"></script>
         {% endblock %}
     {% endblock %}
 

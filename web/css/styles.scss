@@ -1,90 +1,118 @@
 @import "bootstrap/bootstrap";
 @import "animate";
-
-
 @import "fonts";
 @import "mixins";
 @import "buttons";
 
+$size-icon: 40px;
 $color-black: #000;
 $color-yellow: yellow;
-$size-icon: 40px;
+$color-white:white ;
+$color-orange:#ff8812 ;
 
 $background-img1: url(../img/F3.jpg);
-$background-img2: url(../img/L2.jpg);
+$background-img2: url(../img/lady.jpg);
+
+$photo1:url(../img/pageMenu/mereFilleO.jpg);
+$photo2:url(../img/pageMenu/childO.jpg);
+$photo3:url(../img/pageMenu/mereFilsO.jpg);
+$photo4:url(../img/pageMenu/teenagerO.jpg);
 
 [class*="col-"] {
   border: 2px solid $color-black;
 }
-
-body{
-  overflow: hidden;
-  font-family: nowayregular2, serif;
-  height: 100%;
-  width: 100%;
-  background-repeat: no-repeat;
-  color: $yellow;
-  &#img1{
-    background-image: $background-img1;
-    background-size: cover;
-  }
-  &#img2{
-    background-image: $background-img2;
-    background-size: cover;
-  }
-  .container{
-    width: 100%;
-    margin: 0;
-    padding: 0;
-  }
-  .container .row{
-    width: 100%;
-    margin:0;
-     .title{
-       img{
-        @include center-image;
-         animation-delay: 2.6s;
-       }
-     }
-    .les-3-icons  {
-      display: flex;
-      justify-content: space-around;
-      vertical-align:middle;
-      padding-top: 1%;
-      a {
-        @include center-element();
-
-        img{
-          width: $size-icon;
+html{
+  background: $color-orange;
+}
+ body {
+   //overflow: hidden;
+   font-family: nowayregular2, serif;
+   height: 100%;
+   width: 100%;
+   color: $color-white;
+   text-shadow: 0 0 3px #FF0000;
+   margin: 0;
+   padding: 0;
+ }
+    .img1 {
+      background: $background-img1 center center;
+      background-size: cover;
+    }
+    .img2 {
+      background: $background-img2 center center;
+      background-size: cover;
+    }
+   .container {
+     width: 100%;
+     height: 100%;
+     margin: 0;
+     padding: 0;
+   }
+    .container .row {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      .title {
+        img {
+          @include center-image;
+          animation-delay: 2.6s;
         }
-        &:hover {
-          text-decoration: none;
+      }
+      .les-3-icons {
+        display: flex;
+        justify-content: space-around;
+        vertical-align: middle;
+        padding-top: 1%;
+        a {
+          @include center-element();
+
+          img {
+            width: $size-icon;
+          }
+          &:hover {
+            text-decoration: none;
+          }
         }
       }
     }
+
+
+#ligne1{
+  div[class*="col-"]{
+    min-height: 6rem;
+  }
+
+}
+
+#ligne2 {
+  div[class*="col-"] {
+    min-height: 11rem;
   }
 }
 
-#ligne2{
-  div[class*="col-"]{
-    height: 14rem;
-  }
+#ligne3 {
+div[class*="col-"]{
+  min-height: 28rem;
+}
+
+}
   .bandeau-noir {
     position: absolute;
     opacity: 0.5;
     background: $color-black;
     animation-duration: 1s;
-    height: 100%;
+    min-height:11rem;
   }
   .learn {
-    height: 100%;
+    //height: 100%;
     @include center-element();
-    a{
+    a {
       display: inline-block;
       font-size: small;
     }
   }
-}
+
 #button{
   background: url('../img/icon/slide suivant.png') no-repeat;
   background-size: 40px 40px;
@@ -100,34 +128,32 @@ body{
   animation-delay: 1.2s;
 }
 
-  #ligne2-2{
-    width: auto;
-    height: 27%;
+#ligne2-2{
+      height: 11rem;
+    .bandeau-noir2{
+      position: absolute;
+      opacity: 0.5;
+      background: $color-black;
+      animation-duration: 1s;
+      height: 8rem;
+    }
+    .learn {
+      height: 100%;
+      @include center-element();
+      a{
+        display: inline-block;
+        font-size: small;
+      }
+    }
   }
-  #ligne2Interne{
-    height: 100%;
-  }
-  #ligne3 {
-    width: auto;
-    height: 47%;
-  }
-  footer {
-    width: auto;
-    height:10%;
-  }
+
+
   #line2Home2{
     margin-left: 64%;
     width: 110px;
     margin-top: -7%;
   }
-  #bandeauNoir2{
-    height: 50%;
-    width: 100%;
-    opacity: 0.5;
-    background: rgb(0, 0, 0);
-    animation-duration: 1s;
-    margin-top: 45%;
-  }
+
   #bandeauNoir {
     height: 100%;
     width: 100%;
@@ -150,7 +176,7 @@ body{
     animation-delay: 2.3s;
     transition-delay: 2s;
 }
-  #text{
+  .text{
     text-align: left;
     margin-left: 35%;
   }
@@ -159,12 +185,6 @@ body{
     height: 40px;
     width: 40px;
     margin-right: 20px;
-  }
-
-
-  #les4Icons {
-    text-align: center;
-    padding-top: 22%;
   }
 
   #iconMenu {
@@ -179,7 +199,6 @@ body{
   #iconContact {
     animation-delay: 0.9s;
   }
-
 
   #IconIsole{
     animation-delay: 1.2s;
@@ -226,10 +245,119 @@ body{
     margin-right: 32%;
   }
 
-  #buttonProject,#Precedent,#Suivant{
+  #Precedent,#Suivant{
     cursor:pointer;
     border: none;
     background: none;
     color: yellow;
   }
+
+/* PageMenu*/
+
+.color-orange{
+  background-color: $color-orange;
+}
+
+.title2 {
+  animation-delay: 2.6s;
+  padding-left: 20%;
+  padding-top: 5%;
+}
+
+#photo1{
+  background: $photo1;
+  background-size: cover;
+}
+#photo2{
+  background: $photo2;
+  background-size: cover;
+}
+
+#photo3{
+  background: $photo3;
+  background-size: cover;
+}
+#photo4 {
+  background: $photo4;
+  background-size: cover;
+}
+
+#ligne1Menu{
+  height: 19rem;
+  text-align: left;
+  color: beige;
+}
+
+#footerMenu{height:24rem;}
+
+#footerProjet{
+  height: 47rem;
+  background: url(../img/pageProjet/childProjetO.jpg);
+  background-size: cover;
+}
+
+#textProjet{
+  margin-left: 15%;
+  margin-top: 10%;
+}
+
+#nom,#start2,#buttonInvolved{
+  cursor:pointer;
+  border: none;
+  background: none;
+  color: beige;
+}
+#start{margin-left:6.5% }
+
+/* formulaire*/
+
+.slide,.slide2,.submit{
+  display: none;
+}
+
+#NextForm{
+  background: url('../img/icon/arriere.png') no-repeat;
+  padding-top: 35%;
+  padding-left: 60%;
+  animation-delay: 1.2s;
+  font-size: small;
+}
+
+#SuivantForm{
+  background: url('../img/icon/suivant.png') no-repeat;
+  padding-top: 35%;
+  padding-left: 60%;
+  animation-delay: 1.2s;
+  font-size: small;
+}
+
+.sizeText{
+  font-size: 22px;
+}
+#ligne2Form{
+  height: 12rem;
+  background-color:  #ff4d00;
+
+}
+#ligne3Form{
+  height: 24rem;
+  background-color: #ff4d00;
+}
+
+/*AJOUT POUR HOMEPAGE*/
+
+@media all and (min-width: 580px) and (max-width: 768px){
+
+  #footer{
+    background: rgba(200, 37, 10, 0.83);
+  }
+}
+@media all and (max-width :580px){
+  #footer{
+    background: rgba(200, 37, 10, 0.83);
+  }
+  #citeEtLine{
+    margin-left: 47%;
+  }
+}
 
