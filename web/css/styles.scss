@@ -85,15 +85,51 @@ html{
 
 }
 
-#ligne2 {
-  div[class*="col-"] {
-    min-height: 11rem;
+#ligne2{
+  height: 11rem;
+  .bandeau-noir2{
+    position: absolute;
+    opacity: 0.5;
+    background: $color-black;
+    animation-duration: 1s;
+    height: 8rem;
+  }
+  .learn {
+    height: 100%;
+    @include center-element();
+    a{
+      display: inline-block;
+      font-size: small;
+    }
   }
 }
 
+
+
+
+#ligne2-2{
+  height: 11rem;
+  .bandeau-noir2{
+    position: absolute;
+    opacity: 0.5;
+    background: $color-black;
+    animation-duration: 1s;
+    height: 8rem;
+  }
+  .learn {
+    height: 100%;
+    @include center-element();
+    a{
+      display: inline-block;
+      font-size: small;
+    }
+  }
+}
+
+
 #ligne3 {
 div[class*="col-"]{
-  min-height: 28rem;
+  min-height: 31rem;
 }
 
 }
@@ -103,14 +139,6 @@ div[class*="col-"]{
     background: $color-black;
     animation-duration: 1s;
     min-height:11rem;
-  }
-  .learn {
-    //height: 100%;
-    @include center-element();
-    a {
-      display: inline-block;
-      font-size: small;
-    }
   }
 
 #button{
@@ -340,7 +368,7 @@ div[class*="col-"]{
 
 }
 #ligne3Form{
-  height: 24rem;
+  height: 31rem;
   background-color: #ff4d00;
 }
 
