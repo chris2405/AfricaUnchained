@@ -18,9 +18,11 @@ $photo2:url(../img/pageMenu/childO.jpg);
 $photo3:url(../img/pageMenu/mereFilsO.jpg);
 $photo4:url(../img/pageMenu/teenagerO.jpg);
 
+/* Mode dev*/
 [class*="col-"] {
   border: 2px solid $color-black;
 }
+/*General*/
 html{
   background: $color-orange;
 }
@@ -77,7 +79,24 @@ html{
       }
     }
 
+.icon-menu {
+  animation-delay: 0.3s;
+}
 
+.icon-account {
+
+  animation-delay: 0.6s;
+}
+
+.icon-contact {
+  animation-delay: 0.9s;
+}
+
+.icon-isole{
+  animation-delay: 1.2s;
+}
+
+/* HomePage*/
 #ligne1{
   div[class*="col-"]{
     min-height: 6rem;
@@ -104,8 +123,13 @@ html{
   }
 }
 
-
-
+.bandeau-noir {
+  position: absolute;
+  opacity: 0.5;
+  background: $color-black;
+  animation-duration: 1s;
+  min-height:11rem;
+}
 
 #ligne2-2{
   height: 11rem;
@@ -126,20 +150,12 @@ html{
   }
 }
 
-
 #ligne3 {
 div[class*="col-"]{
   min-height: 31rem;
 }
 
 }
-  .bandeau-noir {
-    position: absolute;
-    opacity: 0.5;
-    background: $color-black;
-    animation-duration: 1s;
-    min-height:11rem;
-  }
 
 #button{
   background: url('../img/icon/slide suivant.png') no-repeat;
@@ -156,39 +172,26 @@ div[class*="col-"]{
   animation-delay: 1.2s;
 }
 
-#ligne2-2{
-      height: 11rem;
-    .bandeau-noir2{
-      position: absolute;
-      opacity: 0.5;
-      background: $color-black;
-      animation-duration: 1s;
-      height: 8rem;
-    }
-    .learn {
-      height: 100%;
-      @include center-element();
-      a{
-        display: inline-block;
-        font-size: small;
-      }
-    }
-  }
+/*PageMenu*/
+.btn-organisation{
+  @include right-element();
+  margin-right: 6%;
+}
 
+.btn-projet{
+  @include left-element();
+  margin-left: 12%;
+}
 
-  #line2Home2{
-    margin-left: 64%;
-    width: 110px;
-    margin-top: -7%;
-  }
-
-  #bandeauNoir {
-    height: 100%;
-    width: 100%;
-    opacity: 0.5;
-    background: rgb(0, 0, 0);
-    animation-duration: 1s;
-  }
+.btn-service{
+  margin-left: 15%;
+  margin-top: 3%;
+}
+.btn-publications{
+  @include right-element();
+  margin-top: 2%;
+  margin-right: 9%;
+}
 
   #paragraphe {
     text-align: center;
@@ -196,7 +199,9 @@ div[class*="col-"]{
     font-size: large;
     animation-delay: 2.3s;
     transition-delay: 2s;
+    @include center-element();
   }
+
   #paragraphe2{
     text-align: center;
     color: beige;
@@ -215,52 +220,54 @@ div[class*="col-"]{
     margin-right: 20px;
   }
 
-  #iconMenu {
-    animation-delay: 0.3s;
-  }
-
-  #iconAccount {
-
-    animation-delay: 0.6s;
-  }
-
-  #iconContact {
-    animation-delay: 0.9s;
-  }
-
-  #IconIsole{
-    animation-delay: 1.2s;
-  }
-
+.line2Home2{
+  margin-left: 62%;
+  width: 110px;
+  margin-top: -7%;
+}
   #cite {
-    padding-right: 100px;
+    margin-right: 44%;
     margin-bottom: 1%;
   }
 
-  #line1 {
+.cite2 {
+  margin-right: 44%;
+  margin-bottom: 1%;
+}
+
+  .line1 {
     width: 110px;
     margin-right: 5%;
   }
-  #line2 {
-    margin-top: -3.8%;
-    margin-left: 58%;
+
+.line1-2 {
+  width: 110px;
+  margin-right: 35%;
+}
+  .line2 {
+    margin-top: 0.2%;
+    margin-left: 79%;
     width: 110px;
   }
 
-  #citeEtLine {
-    margin-right: 20%;
+  .citeEtLine {
+    margin-right: 14%;
   }
 
-  #motFin {
-    margin-left: 42%;
+.citeEtLine2 {
+  margin-right: 21%;
+}
+
+  .motFin {
+    margin-left: 66%;
     color: yellow;
     margin-top: -2%;
   }
 
-  #motFin2{
-    margin-left: 37%;
+  .motFin2{
+    margin-left: 38%;
     color: yellow;
-    margin-top: -4%;
+    margin-top: -3%;
   }
   a {
     display: inline-block;
@@ -282,6 +289,12 @@ div[class*="col-"]{
 
 /* PageMenu*/
 
+/*Ligne 1*/
+#ligne1Menu{
+  min-height: 5rem;
+  text-align: left;
+  color: beige;
+}
 .color-orange{
   background-color: $color-orange;
 }
@@ -296,27 +309,34 @@ div[class*="col-"]{
   background: $photo1;
   background-size: cover;
 }
+
 #photo2{
   background: $photo2;
   background-size: cover;
+}
+/*Ligne 2*/
+#ligne2Menu{
+  min-height: 22rem;
+  text-align: left;
+  color: beige;
 }
 
 #photo3{
   background: $photo3;
   background-size: cover;
 }
+
 #photo4 {
   background: $photo4;
   background-size: cover;
 }
 
-#ligne1Menu{
-  height: 19rem;
-  text-align: left;
-  color: beige;
+/*Ligne 3*/
+#ligne3Menu{
+  min-height: 30rem;
 }
 
-#footerMenu{height:24rem;}
+/*Page Projet*/
 
 #footerProjet{
   height: 47rem;
@@ -328,20 +348,23 @@ div[class*="col-"]{
   margin-left: 15%;
   margin-top: 10%;
 }
-
+#buttonInvolved{
+  margin-left: 10%;
+}
+#start2{
+  text-align: center;
+}
 #nom,#start2,#buttonInvolved{
   cursor:pointer;
   border: none;
   background: none;
   color: beige;
 }
-#start{margin-left:6.5% }
-
+#start{margin-left:6.5%; }
+#nom{text-align: center;
+}
 /* formulaire*/
 
-.slide,.slide2,.submit{
-  display: none;
-}
 
 #NextForm{
   background: url('../img/icon/arriere.png') no-repeat;
@@ -372,7 +395,7 @@ div[class*="col-"]{
   background-color: #ff4d00;
 }
 
-/*AJOUT POUR HOMEPAGE*/
+/*MEDIA QUERIES POUR HOMEPAGE*/
 
 @media all and (min-width: 580px) and (max-width: 768px){
 

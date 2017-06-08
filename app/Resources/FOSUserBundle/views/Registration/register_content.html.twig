@@ -1,11 +1,6 @@
 {% extends 'layout/base.html.twig' %}
 {% trans_default_domain 'FOSUserBundle' %}
-
-{% block SuiteHead %}
-    {{ include('FpJsFormValidatorBundle::javascripts.html.twig') }}{% endblock %}
-
 {% block body %}
-
     <div class="container">
 
         <div class="color-orange">
@@ -18,22 +13,22 @@
 
         <div class="col-md-4"></div>
         <div class="col-md-4 hidden-sm-down animated pulse les-3-icons">
-            <a id="iconMenu" class="animated fadeIn" href="{{ path('menu') }}">
+            <a class="animated fadeIn icon-menu" href="{{ path('menu') }}">
                 <img class="tailleIcon" src="{{ asset('img/icon/close.png') }}">
                 <div class="txtSousMenu">
                     back
                 </div>
             </a>
-            <a id="iconContact" class="animated fadeIn" href="{{ path('fos_user_registration_register') }}">
+            <a class="animated fadeIn icon-contact" href="{{ path('fos_user_registration_register') }}">
                 <img class="tailleIcon" src="{{ asset('img/icon/contact.png') }}">
                 <div class="txtSousMenu" >
                     contact
                 </div>
             </a>
-            <a id="iconAccount" class="animated fadeIn" href="{{ path('fos_user_registration_register') }}">
+            <a class="animated fadeIn icon-account" href="{{ path('fos_user_registration_register') }}">
                 <img class="tailleIcon" src="{{ asset('img/icon/account.png') }}">
                 <div class="txtSousMenu" style="font-size:xx-small ">
-                    my account
+                    account
                 </div>
             </a>
         </div>
@@ -47,32 +42,9 @@
         </div>
     <div id="ligne3Form" class="row">
     <div class="col-md-8" >
-    {{ form_start(form)}}
-        <div class="slide1">
-        {{ form_label(form.username)}}
-        {{ form_widget(form.username)}}
-        {{ form_label(form.phone)}}
-        {{ form_widget(form.phone)}}
-        {{ form_label(form.email)}}
-        {{ form_widget(form.email)}}
-        </div>
-        <div class="slide2">
-        {{ form_label(form.occupation)}}
-        {{ form_widget(form.occupation)}}
-        {{ form_label(form.Autre)}}
-        {{ form_widget(form.Autre)}}
-        {{ form_label(form.Industry)}}
-        {{ form_widget(form.Industry)}}
-        </div>
-    <div class="slide">
-        {{ form_widget(form.plainPassword.first,{ 'attr': { 'placeholder' : 'Mot de passe'} }) }}
-        {{ form_widget(form.plainPassword.second,{ 'attr': {'placeholder' : 'Confirmation'} }) }}
-    </div>
-
-
-<div class="submit">
-        <input type="submit" value="{{ 'registration.submit'|trans }}"/>
-        </div>
+        {{ form_start(form) }}
+        {{ form_errors(form) }}
+        {{ form_rest(form) }}
         {{ form_end(form) }}
     </div>
 
@@ -84,5 +56,4 @@
     </div>
     </div>
 
-    {% block SuiteJavascripts %}  <script src="{{ asset('') }}"></script>{% endblock %}
 {% endblock %}

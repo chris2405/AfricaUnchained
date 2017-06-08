@@ -19,8 +19,8 @@ class AppKernel extends Kernel
             new MainBundle\MainBundle(),
             new FOS\UserBundle\FOSUserBundle(),
             new JavierEguiluz\Bundle\EasyAdminBundle\EasyAdminBundle(),
-            new Fp\JsFormValidatorBundle\FpJsFormValidatorBundle()
-
+            new Craue\FormFlowBundle\CraueFormFlowBundle(),
+            new Misd\PhoneNumberBundle\MisdPhoneNumberBundle()
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'), true)) {

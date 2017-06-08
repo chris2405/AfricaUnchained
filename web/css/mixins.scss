@@ -22,3 +22,16 @@
     background-color: #7b5d08;
   }
 }
+
+@mixin right-element() {
+  display: grid;
+  justify-content: right;
+
+}
+
+@mixin left-element() {
+  display: grid;
+  justify-content: left;
+
+
+}

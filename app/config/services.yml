@@ -11,3 +11,8 @@ services:
         class: AppBundle\Form\RegistrationFormType
         tags:
             - { name: form.type, alias: app_user_registration }
+
+    myCompany.form.flow.createVehicle:
+        class: AppBundle\Form\RegistrationFormType
+        parent: craue.form.flow
+
