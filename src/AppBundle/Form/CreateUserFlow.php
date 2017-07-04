@@ -21,7 +21,6 @@ class CreateUserFlow extends FormFlow
         );
     }
 
-
     public function getBlockPrefix() {
         return 'CreateUserFlow';
     }

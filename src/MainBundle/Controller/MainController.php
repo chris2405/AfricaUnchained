@@ -38,12 +38,14 @@ public function project()
     return $this->render('@Main/Default/projet.html.twig');
 }
 
+
     /**
-     * @Route("/form",name="form")
+     * @Route("/follow",name="follow")
      */
-    public function form()
+    public function follow()
     {
 
-        return $this->render('@Main/Default/form.html.twig');
+        return $this->render('@Main/Default/follow.html.twig');
     }
+
 }

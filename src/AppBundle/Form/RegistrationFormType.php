@@ -54,24 +54,24 @@ class RegistrationFormType extends AbstractType
                     'class' => 'form-control'
                 )
             ))
-            ->add('password', RepeatedType::class, array(
-                'required' => true,
-                'type' => PasswordType::class,
-                'invalid_message' => 'mot de passe incorrect',
-                'options' => array(
-                    'attr' => array(
-                        'class'=> 'password-field'
-                    )
-                ),
-                'first_options' => array(
-                    'label' => 'password',
-                ),
-                'second_options' => array(
-                    'label' => 'repeat-password',
+//            ->add('password', RepeatedType::class, array(
+//                'required' => true,
+//                'type' => PasswordType::class,
+//                'invalid_message' => 'mot de passe incorrect',
+//                'options' => array(
+//                    'attr' => array(
+//                        'class'=> 'password-field'
+//                    )
+//                ),
+//                'first_options' => array(
+//                    'label' => 'password',
+//                ),
+//                'second_options' => array(
+//                    'label' => 'repeat-password',
+//
+//                )
 
-                )
-
-            ))
+//            ))
 
         ;
 

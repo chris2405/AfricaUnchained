@@ -6,7 +6,8 @@
     <link href="{{ asset('dist/styles.css') }}" rel="stylesheet">
     {% block stylesheets %}{% endblock %}
 </head>
-<body>
+<body class="{% block body_class %}{% endblock %}" id="{% block body_id %}{% endblock %}">
+{% include '@Main/Default/header.html.twig' %}
 {% block body %}{% endblock %}
 <script src="{{ asset('dist/script.js') }}"></script>
 {% block javascripts %}{% endblock %}

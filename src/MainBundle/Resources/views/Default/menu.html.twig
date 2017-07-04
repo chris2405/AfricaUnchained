@@ -1,41 +1,9 @@
 {% extends 'layout/base.html.twig' %}
 
+{% block body_id 'menu'%}
 {% block body %}
 
-<div class="container">
-    <div class="color-orange">
-        <div id="ligne1Menu" class="row">
-            <div class="col-md-4 col-sm-12 col-xs-12">
-                <div class="animated fadeIn animated zoomInDown title2 ">
-                    <img src="{{ asset('img/icon/logopetit.png') }}" class="animated pulse">
-                </div>
-            </div>
-            <div class="col-md-6">
-            </div>
-            <div class="col-md-2 hidden-sm-down animated pulse les-3-icons">
-                <a class="animated fadeIn icon-menu" href="{{ path('home') }}">
-                    <img class="tailleIcon" src="{{ asset('img/icon/close.png') }}">
-                    <div  class="txtSousMenu">
-                        close
-                    </div>
-                </a>
-                <a class="animated fadeIn icon-contact" href="{{ path('fos_user_registration_register') }}">
-                    <img class="tailleIcon" src="{{ asset('img/icon/contact.png') }}">
-                    <div class="txtSousMenu" >
-                        contact
-                    </div>
-                </a>
-                <a class="animated fadeIn icon-account" href="{{ path('fos_user_registration_register') }}">
-                    <img class="tailleIcon" src="{{ asset('img/icon/account.png') }}">
-                    <div class="txtSousMenu" style="font-size:xx-small ">
-                        account
-                    </div>
-                </a>
-            </div>
-        </div>
-
-    </div>
-
+    <div class="container">
     <div id="ligne2Menu" class="row">
 
     <div id="photo1" class="col-md-5 hidden-sm-down">
@@ -44,7 +12,7 @@
         <img class="line1" src="{{ asset('img/line.png') }}"><br>
         W.TEKAM, Blockchain Engineer
     </div>
-        <div class="btn-organisation">
+        <div class="btn-organisation animated fadeIn">
             <a class="btn btn-africaunchained" href="{{ path('projet') }}">
                 < organisation + >
             </a>
@@ -64,7 +32,7 @@
         <img style="margin-left: 53%" class="line1" src="{{ asset('img/line.png') }}"><br>
        <p style="margin-left: 35%">M.Ratsiraka, Developper, Co-Founder</p>
     </div>
-    <div class="btn-projet">
+    <div class="btn-projet animated fadeIn">
         <a class="btn btn-africaunchained" href="{{ path('projet') }}">
             < project + >
         </a>
@@ -75,7 +43,7 @@
 
     <footer id="ligne3Menu" class="row">
 <div id="photo3" class="col-md-7">
-    <div class="btn-publications">
+    <div class="btn-publications animated fadeIn">
         <a class="btn btn-africaunchained" href="{{ path('projet') }}">
             < publications + >
         </a>
@@ -93,7 +61,7 @@
     </div>
 </div>
         <div id="photo4" class="col-md-5 hidden-sm-down">
-            <div class="btn-service">
+            <div class="btn-service animated fadeIn">
                 <a class="btn btn-africaunchained" href="{{ path('projet') }}">
                     < services + >
                 </a>
@@ -109,8 +77,5 @@
     </footer>
 
 </div>
-
-
-
 
 {% endblock %}

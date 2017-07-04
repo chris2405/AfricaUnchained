@@ -2,44 +2,16 @@
 
 {% block title %}HomePage{% endblock %}
 
+{% block body_id 'home' %}
+{% block body_class 'img1' %}
 {% block body  %}
-    <div class="img1">
-    <div class="container">
-        <div id="ligne1" class="row">
-            <div class="col-md-4 col-sm-12 col-xs-12">
-                <div class="animated fadeIn animated zoomInDown title">
-                    <img src="{{ asset('img/icon/logopaysage.png') }}" class="animated pulse" />
-                </div>
-            </div>
-            <div class="col-md-6 hidden-sm-down"></div>
-            <div class="col-md- hidden-sm-down animated pulse les-3-icons">
-                <a class="animated fadeIn icon-menu" href="{{ path('menu') }}">
-                    <img class="tailleIcon" src="{{ asset('img/icon/menu.png') }}">
-                    <div class="txtSousMenu">
-                        menu
-                    </div>
-                </a>
-                <a class="animated fadeIn icon-contact" href="{{ path('fos_user_registration_register') }}">
-                    <img class="tailleIcon" src="{{ asset('img/icon/contact.png') }}">
-                    <div class="txtSousMenu">
-                        contact
-                    </div>
-                </a>
-                <a class="animated fadeIn icon-account" href="{{ path('fos_user_registration_register') }}">
-                    <img class="tailleIcon" src="{{ asset('img/icon/account.png') }}">
-                    <div class="txtSousMenu">
-                        account
-                    </div>
-                </a>
-            </div>
-        </div>
 
         <div id="ligne2" class="row">
             <div class="col-12 bandeau-noir animated slideInRight">
             </div>
-            <div class="col-8">
+            <div class="col-md-8 hidden-sm-down">
             </div>
-            <div class="col-4">
+            <div class="col-md-4 col-sm-12">
                 <div class="learn">
                     <a class="btn btn-africaunchained" href="{{ path('projet') }}">
                         < learn + >
@@ -49,9 +21,9 @@
         </div>
 
         <div id="ligne3" class="row">
-            <div class="col-md-6 hidden-sm-down hidden-xs-down ">
+            <div class="col-md-6 hidden-sm-down hidden-xs-down">
                 <div id="boutonNext" class="animated fadeIn">
-                    <input id="button"  type="button"/>
+                    <button id="buttonNext" class="buttonS"/>
                 </div>
             </div>
 
@@ -73,49 +45,47 @@
                 <div class="motFin">
                     M.Ravony, CEO ,Co-Founder
                 </div>
-                </div>
-
+            </div>
         </div>
         </div>
 
             <div class="container">
                 <div class="row">
                     <div id="footer" class="col-lg-12 hidden-md-up col-sm-offset-12 col-xs-offset-12 les-3-icons">
-                        <a id="iconMenu" class="animated fadeIn" href="{{ path('menu') }}">
+                        <button class="animated fadeIn icon-menu button" href="{{ path('menu') }}">
                             <img class="tailleIcon" src="{{ asset('img/icon/menu.png') }}">
                             <div class="txtSousMenu">
                                 menu
                             </div>
-                        </a>
-                        <a class="animated fadeIn icon-contact" href="{{ path('fos_user_registration_register') }}">
-                            <img class="tailleIcon" src="{{ asset('img/icon/contact.png') }}">
-                            <div class="txtSousMenu">
-                                contact
-                            </div>
-                        </a>
-                        <a class="animated fadeIn icon-account" href="{{ path('fos_user_registration_register') }}">
-                            <img class="tailleIcon" src="{{ asset('img/icon/account.png') }}">
-                            <div class="txtSousMenu">
-                                account
-                            </div>
-                        </a>
-                        <a class="animated fadeIn icon-isole" href="{{ path('fos_user_registration_register') }}">
-                            <img class="tailleIcon" src="{{ asset('img/icon/slide suivant.png') }}">
-                            <div class="txtSousMenu">
-                                next
-                            </div>
-                        </a>
-                    </div>
+                        </button>
+                            <button class="animated fadeIn icon-contact button" href="{{ path('fos_user_registration_register') }}">
+                                <img class="tailleIcon" src="{{ asset('img/icon/contact.png') }}">
+                                <div class="txtSousMenu">
+                                    contact
+                                </div>
+                            </button>
+                            <button class="animated fadeIn icon-account button" href="{{ path('fos_user_registration_register') }}">
+                                <img class="tailleIcon" src="{{ asset('img/icon/account.png') }}">
+                                <div class="txtSousMenu">
+                                    account
+                                </div>
+                            </button>
+                                <button class="animated fadeIn icon-account button buttonS">
+                                    <img class="tailleIcon" src="{{ asset('img/icon/slide suivant.png') }}">
+                                    <div class="txtSousMenu">
+                                        next
+                                    </div>
+                            </button>
                 </div>
             </div>
-    </div>
+            </div>
 
     <div id="ligne2-2" class="row" >
         <div class="col-12 bandeau-noir2 animated slideInRight">
         </div>
-        <div class="col-8">
+        <div class="col-md-8 hidden-sm-down">
         </div>
-        <div class="col-4">
+        <div class="col-md-4 col-sm-12">
             <div class="learn">
                 <a class="btn btn-africaunchained" href="{{ path('projet') }}">
                     < project + >

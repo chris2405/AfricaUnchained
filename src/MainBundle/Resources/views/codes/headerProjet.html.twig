@@ -1,0 +1,41 @@
+{% extends 'layout/base.html.twig' %}
+
+
+{% block body_id 'header-projet' %}
+{% block body %}
+
+<div class="container">
+    <div class="color-orange">
+        <div class="row">
+            <div class="col-md-4 col-sm-12 col-xs-12">
+                <div class="animated fadeIn animated zoomInDown title2">
+                    <img src="{{ asset('img/icon/logopetit.png') }}" class="animated pulse">
+                </div>
+            </div>
+            <div class="col-md-6"></div>
+            <div class="col-md-2 hidden-sm-down animated pulse les-3-icons">
+                <a class="animated fadeIn icon-menu" href="{{ path('menu') }}">
+                    <img class="tailleIcon" src="{{ asset('img/icon/close.png') }}">
+                    <div class="txtSousMenu">
+                        back
+                    </div>
+                </a>
+                <a class="animated fadeIn icon-contact" href="{{ path('fos_user_registration_register') }}">
+                    <img class="tailleIcon" src="{{ asset('img/icon/contact.png') }}">
+                    <div class="txtSousMenu" >
+                        contact
+                    </div>
+                </a>
+                <a class="animated fadeIn icon-account" href="{{ path('fos_user_registration_register') }}">
+                    <img class="tailleIcon" src="{{ asset('img/icon/account.png') }}">
+                    <div class="txtSousMenu">
+                        account
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}
